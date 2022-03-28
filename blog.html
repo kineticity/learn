@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Blog</title>
+        <!--<link rel="icon" type="image/jpg" sizes="32x32" href="" >-->
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+        
+        <link rel=stylesheet type="text/css" href="blog.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+    </head>
+
+    <header>
+        <h1>personal blog</h1>
+
+        <nav>
+            <ul>
+                <li><a class="" href="index.html">home</a></li>
+                <li><a class="" href="blog.html">blogs</a></li>
+                <li><a class="" href="form.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <div class="row">
+          {% for object in object_list %}
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+    <div class="card card-cascade narrower card-hover"><a href="{{object.url}}"></a>
+
+    <!-- Card image -->
+        <div class="view view-cascade overlay">
+          <img class="card-img-top" src="{{ object.image }}"
+            alt="Card image cap">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+
+         
+          <!-- Title -->
+          <h4 class="font-weight-bold card-title">{{object.title}}</h4>
+          <!-- Text -->
+          <p class="card-text">{{ object.description }}</p>
+          <!-- Button -->
+          <a href="{{object.url}}" target="_blank">Read More</a>
+
+    </div>
+  </a></div>
+    </div>
+     {% endfor %}
+  </div>
+</div>
+
+<footer class="fixed-bottom">
+    <hr>
+    <p> < / > with ♥️</p>
+</footer>
+
+</html>
