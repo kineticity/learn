@@ -10,16 +10,14 @@
         <link rel=stylesheet type="text/css" href="main.css">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script> 
             $(document).ready(function(){
-            
-                $(window).scroll(function(){
-                $("img").fadeIn();
-  
-                });
-           
+              $("#click-me").click(function(){
+                $("#slide-me").slideDown("slow");
+              });
             });
-        </script>
+            </script>
     </head>
 
     <body>
@@ -50,7 +48,7 @@
 
                 <div class="col-5">
                     <div class="float-lg-right float-sm-none">
-                        <img src="./home-page-new.jpg" alt="image" />
+                        <img id="main-img" src="./home-page-new.jpg" alt="image" />
                     </div>
                 </div>
             
@@ -69,9 +67,97 @@
 
         </script>
 
+<div class="container">
+    <div class="row">
+      
+    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+<div class="card card-cascade narrower card-hover">
+
+<!-- Card image -->
+    <div class="view view-cascade overlay">
+      <img class="card-img-top" id="click-me" src="converse.jpeg"
+        alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+<!-- Card content -->
+<div class="card-body card-body-cascade" id="slide-me">
+
+     
+      <!-- Title -->
+      <h4 class="font-weight-bold card-title">Walking</h4>
+      <!-- Text -->
+      <p class="card-text">Running</p>
+      <!-- Button -->
+      <a href="{{object.url}}" target="_blank">Read More</a>
+
+</div>
+</a></div>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+    <div class="card card-cascade narrower card-hover">
+
+        <!-- Card image -->
+            <div class="view view-cascade overlay">
+            <img class="card-img-top" id="click-me" src="orange.jpeg"
+                alt="Card image cap">
+            <a>
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+        
+        <!-- Card content -->
+        <div class="card-body card-body-cascade" id="slide-me">
+        
+            
+            <!-- Title -->
+            <h4 class="font-weight-bold card-title">Walking</h4>
+            <!-- Text -->
+            <p class="card-text">Running</p>
+            <!-- Button -->
+            <a href="{{object.url}}" target="_blank">Read More</a>
+        
+        </div>
+        </a></div>
+    </div>
+</div>
+
+    <div class="card card-cascade narrower card-hover">
+
+        <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img class="card-img-top" id="click-me" src="cassette.jpeg"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+        
+        <!-- Card content -->
+        <div class="card-body card-body-cascade" id="slide-me">
+        
+             
+              <!-- Title -->
+              <h4 class="font-weight-bold card-title">Walking</h4>
+              <!-- Text -->
+              <p class="card-text">Running</p>
+              <!-- Button -->
+              <a href="{{object.url}}" target="_blank">Read More</a>
+        
+        </div>
+        </a></div>
+        </div>
+
+ <!-- h -->
+</div>
+</div>
+
 
         <hr>
-        <footer class="fixed-bottom">
+        <footer>
             
             <p>All Rights Reserved.<br>SE-D D2<br>20CE1066 Keertana Pradeepkumar,20CE1105 Ishwari Garge,20CE1169 Aditi Angne </p>
         </footer>
