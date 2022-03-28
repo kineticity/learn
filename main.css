@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lobster Two', cursive;
 }
 
 p {
@@ -12,7 +11,7 @@ p {
 }
 
 header {
-    width: 100vw;
+    width: 96vw;
     position: sticky;
     display: inline-flex;
     align-items: center;
@@ -27,6 +26,7 @@ header {
 h1 {
     margin-left: 2rem;
     display: inline;
+    font-family: 'LobsterTwo', cursive;
 }
 
 nav {
@@ -65,19 +65,22 @@ nav li a:hover {
     text-shadow: 0px 3px 3px rgba(87, 87, 87, 0.6);
 }
 
-div p {
+/* div p {
     width: 40vw;
     margin: 3rem;
     display: inline-block;
-    font-size: 1.7rem;
-    padding: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
-img {
+#main-img {
     width: 40vw;
     z-index: -1;
     margin: 3rem;
+}
+
+#slide-me {
+    display: none;
 }
 
 footer {
